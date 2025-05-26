@@ -3,15 +3,15 @@
     "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>polar</key>
+    <key>contact</key>
     <string>watt@lambda.polar</string>
-    <key>polar</key>
+    <key>author</key>
     <string>Vyacheslav</string>
     <key>description</key>
     <string>TextMate Bundle for Watt programming language.</string>
     <key>name</key>
     <string>Watt</string>
     <key>uuid</key>
-    <string>8B1D7F9E-4C1A-4D2F-8A1F-123456789ABC</string> <!-- сгенерируй свой UUID -->
+    <string>8B1D7F9E-4C1A-4D2F-8A1F-123456789ABC</string>
 </dict>
 </plist>
