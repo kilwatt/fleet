@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>name</key>
+  <string>Watt</string>
+  <key>scopeName</key>
+  <string>source.wt</string>
+  <key>fileTypes</key>
+  <array>
+    <string>wt</string>
+  </array>
+  <key>patterns</key>
+  <array>
+
+    <!-- Single-line comments -->
+    <dict>
+      <key>name</key>
+      <string>comment.line.double-slash.watt</string>
+      <key>match</key>
+      <string>//.*$</string>
+    </dict>
+
+    <!-- Multi-line comments -->
+    <dict>
+      <key>name</key>
+      <string>comment.block.watt</string>
+      <key>begin</key>
+      <string>/\*</string>
+      <key>end</key>
+      <string>\*/</string>
+    </dict>
+
+    <!-- Keywords -->
+    <dict>
+      <key>name</key>
+      <string>keyword.control.watt</string>
+      <key>match</key>
+      <string>\b(assert|break|case|catch|continue|default|elif|else|error|for|full_typeof|fun|if|impl|in|lambda|match|native|new|return|self|throw|trait|try|type|typeof|unit|while|import|with)\b</string>
+    </dict>
+
+    <!-- Boolean and null constants -->
+    <dict>
+      <key>name</key>
+      <string>constant.language.watt</string>
+      <key>match</key>
+      <string>\b(true|false|null)\b</string>
+    </dict>
+
+    <!-- Operators -->
+    <dict>
+      <key>name</key>
+      <string>keyword.operator.watt</string>
+      <key>match</key>
+      <string>(\!=|\*=|\+=|\-=|/=|:=|&lt;=|&gt;=|=|&lt;|&gt;|\+|\-|\*|/|\b(and|or|impls)\b|\|&gt;)</string>
+    </dict>
+
+    <!-- Strings in single quotes -->
+    <dict>
+      <key>name</key>
+      <string>string.quoted.single.watt</string>
+      <key>begin</key>
+      <string>'</string>
+      <key>end</key>
+      <string>'</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>name</key>
+          <string>constant.character.escape.watt</string>
+          <key>match</key>
+          <string>\\.</string>
+        </dict>
+      </array>
+    </dict>
+
+    <!-- Numbers -->
+    <dict>
+      <key>name</key>
+      <string>constant.numeric.watt</string>
+      <key>match</key>
+      <string>\b\d+(\.\d+)?\b</string>
+    </dict>
+
+    <!-- Private variables -->
+    <dict>
+      <key>name</key>
+      <string>variable.other.private.watt</string>
+      <key>match</key>
+      <string>\$[a-zA-Z_][a-zA-Z0-9_]*</string>
+    </dict>
+
+  </array>
+</dict>
+</plist>
